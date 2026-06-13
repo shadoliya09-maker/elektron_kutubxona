@@ -15,11 +15,6 @@ from django.utils import timezone
 from rest_framework import viewsets
 import random
 
-class XizmatViewSet(viewsets.ModelViewSet):
-    queryset = Xizmat.objects.all()
-    serializer_class = XizmatSerializer
-    permission_classes = [AllowAny]
-
 User = get_user_model()
 
 @transaction.atomic

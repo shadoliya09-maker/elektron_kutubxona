@@ -5,13 +5,7 @@ from rest_framework import serializers
 import re
 from .models import *
 
-class XizmatSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Xizmat
-        fields = '__all__'
-
 User = get_user_model()
-
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
