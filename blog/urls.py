@@ -4,7 +4,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import *
 
 router = DefaultRouter()
-router.register(r'xizmatlar', XizmatViewSet)
 router.register(r'books', BookViewSet, basename='book')
 router.register(r'categories', CategoryViewSet, basename='category')
 router.register(r'borrowings', BorrowingViewSet, basename='borrowing')
