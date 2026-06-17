@@ -40,12 +40,10 @@ SECRET_KEY = 'django-insecure-$#c%&an^1uj5hsbq4jkl1ywfa76*-%1=ll=#58s-pb!yhmau(i
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    *
-    "localhost",
-    "127.0.0.1",
-    ".up.railway.app",
+    'elektron-kutubxona-il1q.onrender.com',
+    'localhost',
+    '127.0.0.1'
 ]
-
 AUTH_USER_MODEL = 'blog.User'
 # Application definition
 
