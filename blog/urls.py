@@ -22,8 +22,8 @@ urlpatterns = [
     path('comments/', CommentCreateView.as_view(), name='comments_created'),
     path('posts/<int:post_id>/like/', PostLikeView.as_view(), name='post-like'),
     path('comments/<int:comment_id>/like/', CommentLikeView.as_view(), name='comment-like'),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('login/', LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
  ]
